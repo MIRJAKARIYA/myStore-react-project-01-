@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactModal from '../Modal/ReactModal';
 import './SingleProduct.css'
 
 const SingleProduct = (props) => {
@@ -16,7 +17,7 @@ const SingleProduct = (props) => {
                 <div className='mt-3'>
                     <button onClick={props.updateCount} className='btn btn-success mx-1'>Add to cart</button>
                     <button onClick={props.decCount} className='btn btn-danger mx-1'>Remove</button>
-                    <button className='btn btn-info mx-1 text-white'>Details</button>
+                    <ReactModal></ReactModal>
                 </div>
             </div>
         </div>
