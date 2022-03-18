@@ -10,9 +10,10 @@ const AllProducts = (props) => {
     },[]);
     console.log(products[0])
     return (
-        <div className='mt-5 container'>
+        <div className='mt-3 container'>
+            <h1 className='mb-3'>Buy anything you want!!!!</h1>
             <h5>Products: {products.length}</h5>
-            <div className='row g-4'>
+            <div className='row g-4 mt-3'>
                 {
                     products.map(product => <SingleProduct key={product.id} decCount={props.decCount} updateCount={props.updateCount} product={product}></SingleProduct>)
                 }

@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import './App.css';
 import AllProducts from './components/AllProducts/AllProducts';
+import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
         <Navbar count={cartCount}></Navbar>
         <AllProducts updateCount={updateCount} decCount={decCount}></AllProducts>
+        <Footer></Footer>
     </div>
   );
 }

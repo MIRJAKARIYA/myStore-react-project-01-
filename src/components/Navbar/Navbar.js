@@ -10,7 +10,7 @@ const Navbar = (props) => {
             <div className='ms-auto nav-container'>
                 <a className='me-4 text-decoration-none' href="/home">home</a>
                 <a className='me-4 text-decoration-none' href="/catagories">catagories</a>
-                <a className='me-4 text-decoration-none' href="/cart">cart<sup>{props.count}</sup></a>
+                <a className='me-4 text-decoration-none' href="/cart">cart <sup>{props.count}</sup></a>
                 <a className='me-4 text-decoration-none' href="/aboutus">about us</a>
             </div>
         </div>

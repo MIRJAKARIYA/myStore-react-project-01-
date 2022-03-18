@@ -13,11 +13,10 @@ const SingleProduct = (props) => {
                 <p className='m-0'>{title.slice(0,15)}</p>
                 <p className='m-0'>Price: {price}</p>
                 <p className='m-0'>Rating: {rating.rate}</p>
-                <p className='m-0 mt-3'>{description.slice(0,100)}</p>
                 <div className='mt-3'>
                     <button onClick={props.updateCount} className='btn btn-success mx-1'>Add to cart</button>
                     <button onClick={props.decCount} className='btn btn-danger mx-1'>Remove</button>
-                    <ReactModal></ReactModal>
+                    <ReactModal description={description} image={image} rating={rating} title={title}></ReactModal>
                 </div>
             </div>
         </div>
