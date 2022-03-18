@@ -14,8 +14,8 @@ const SingleProduct = (props) => {
                 <p className='m-0'>Rating: {rating.rate}</p>
                 <p className='m-0 mt-3'>{description.slice(0,100)}</p>
                 <div className='mt-3'>
-                    <button className='btn btn-success mx-1'>Add to cart</button>
-                    <button className='btn btn-danger mx-1'>Remove</button>
+                    <button onClick={props.updateCount} className='btn btn-success mx-1'>Add to cart</button>
+                    <button onClick={props.decCount} className='btn btn-danger mx-1'>Remove</button>
                     <button className='btn btn-info mx-1 text-white'>Details</button>
                 </div>
             </div>
