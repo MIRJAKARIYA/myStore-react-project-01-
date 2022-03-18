@@ -1,0 +1,6 @@
+.nav-container a{
+    color: white;
+}
+.nav-container a:hover{
+    color: blueviolet;
+}
