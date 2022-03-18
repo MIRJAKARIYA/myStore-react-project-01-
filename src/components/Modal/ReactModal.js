@@ -23,9 +23,9 @@ const ReactModal = ({title,description,image,rating}) => {
                         <img src={image} className='w-100' alt="" />
                     </div>
                     <div className='w-50 ms-4'>
-                        <p className='m-0'>Product name: {title}</p>
-                        <p className='m-0'>Rating: {rating.rate}</p>
-                        <p className='m-0'>{description}</p>
+                        <p className='m-0'><span className='text-primary'>Product name:</span> {title}</p>
+                        <p className='m-0'><span className='text-primary'>Rating:</span> {rating.rate}</p>
+                        <p className='m-0'>{description}.</p>
                     </div>
                 </div>
             </Modal.Body>
